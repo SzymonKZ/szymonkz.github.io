@@ -1,0 +1,42 @@
+.sida1 {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+	grid-template-rows: 1.5fr 0.5fr 3fr 0.5fr;
+	grid-template-areas: 
+	"topm topm topm topm"
+	"header header header header"
+    "art1 as1 as2 art2"
+	"art1 as1 footer footer";
+
+}
+.sida1 > header, article, aside, footer, nav {
+	font-family: garamond;
+	text-align: justify;
+	border: 1px solid black;
+	padding: 1em;
+}
+.header { grid-area: header; color: orange; text-align: center }
+.topnav {grid-area: topm;}
+.topnav > .topmenu {display: flex;
+ flex-flow: row;
+ justify-content: space-around; padding: 0;
+ list-style-type: none;}
+.art1 { grid-area: art1; }
+.art2 { grid-area: art2; }
+.as1 { grid-area: as1; }
+.as2 { grid-area: as2; }
+.footer { grid-area: footer; padding: 2em; }
+
+blockquote {
+	display: block;
+	border: 1px solid black;
+	padding: 1em;
+	padding: 1em;
+}
+
+
+
+.sida1 > header, footer, .topmenu {
+	text-align: center;
+}

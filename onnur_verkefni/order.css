@@ -1,0 +1,66 @@
+ * {
+    box-sizing: border-box;
+}
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+footer p {
+  text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-flow: row-reverse;
+	text-align: center;
+	vertical-align: center;
+}
+
+.row > .gulur {
+	background-color: yellow; 
+	width: 25%;
+}
+.row > .raudur {
+	background-color: red; 
+	width: 25%;
+}
+
+.row > .graenn {
+	background-color: lime;
+	width: 25%;
+}	
+
+.row > .blar {
+	background-color: cyan; 
+	width: 25%;
+}
+
+.col {
+	display: flex;
+	flex-flow: column-reverse;
+	text-align: center;
+	vertical-align: middle;
+} 
+
+.gulur {
+	background-color: yellow; 
+	border: 1px solid black;
+}
+.raudur {
+	background-color: red; 
+	border: 1px solid black;
+}
+.graenn {
+	background-color: lime;
+	border: 1px solid black;
+}
+.blar {
+	background-color: cyan; 
+	border: 1px solid black;
+}
+.box {
+	font-size: 1.2em;
+	height: 5em;
+}
